@@ -60,7 +60,13 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background: url("./img/") no-repeat center center fixed; */
+  background-image: url("../img/boardwalk-boats-calm-waters-1576739.jpg");
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
+ background-size: 100% auto;
 }
 
 [tabindex="-1"]:focus {
