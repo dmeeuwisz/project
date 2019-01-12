@@ -62,7 +62,7 @@ body {
   text-align: left;
   /* background-color: #fff; */
   /* background: url("./img/") no-repeat center center fixed; */
-  background-image: url("../img/boardwalk-boats-calm-waters-1576739.jpg");
+  background-image: url("../img/boardwalk-boats-calm-waters-1576739.jpg") no-repeat center center fixed;
 -webkit-background-size: 100% auto;
 -moz-background-size: 100% auto;
 -o-background-size: 100% auto;
