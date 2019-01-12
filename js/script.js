@@ -1,4 +1,17 @@
 //data
+const sitemap = new Array(
+    {name : "link1", link : "#"},
+    {name : "link2", link : "#"},
+    {name : "link3", link : "#"},
+    {name : "link4", link : "#"},
+    {name : "link5", link : "#"},
+    {name : "link6", link : "#"},
+    {name : "link7", link : "#"},
+    {name : "link8", link : "#"},
+    {name : "link9", link : "#"},
+    {name : "link10", link : "#"},
+);
+
 const countries = new Array(
     { id : 1, name : "Russia" },
     { id : 2, name : "The Netherlands" },
@@ -11,7 +24,12 @@ const countries = new Array(
 );
 
 const cities = new Array(
-    { id : 1, name : "Moscow", countryid : 1 },
+    {   id : 1, 
+        name : "Moscow", 
+        countryid : 1,
+        description: "",
+        weather_type: ""
+    },
     { id : 2, name : "Vladivostok", countryid : 1 },
     { id : 3, name : "Utrecht", countryid : 2 },
     { id : 4, name : "Amsterdam", countryid : 2 },
@@ -85,6 +103,7 @@ const restaurants = new Array({ id : 1, name : "Moscow", countryid : 1 },
 
 function init () {
     DisplayField1();
+    fillNavigation();
 }
 
 function GetAllCitiesOfCountry (countryid) {
@@ -176,4 +195,18 @@ function DisplayFacilities (){
         }
     });
     
+}
+
+function fillNavigation() {
+    let navbar = document.getElementById("navcontent");
+    while (navbar.firstChild) {
+        navbar.removeChild(navbar.firstChild);
+      }
+    sitemap.map(item => {
+        let newElement = document.createElement("a");
+        newElement.setAttribute("href", item.link);
+        newElement.setAttribute("class","dropdown-item");
+        newElement.innerHTML = item.name;
+        navbar.appendChild(newElement);
+    });
 }
