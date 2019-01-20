@@ -60,10 +60,10 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  /* background-color: #fff; */
+  background-color: #fff;
   /* background: url("./img/") no-repeat center center fixed; */
-  background: url("../img/boardwalk-boats-calm-waters-1576739.jpg") top center no-repeat, url("../img/boats-body-of-water-canoe-1756874.jpg") bottom center repeat ;
-  background-color: #343a40;
+  /* background: url("../img/boardwalk-boats-calm-waters-1576739.jpg") top center no-repeat, url("../img/boats-body-of-water-canoe-1756874.jpg") bottom center repeat ; */
+  /* background-color: #343a40; */
 -webkit-background-size: 100% auto;
 -moz-background-size: 100% auto;
 -o-background-size: 100% auto;
